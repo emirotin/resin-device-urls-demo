@@ -10,7 +10,7 @@ if (process.env.NODE_ENV == 'production') {
 }
 app.use(compression());
 app.all('*', function (req, res) {
-	res.end(req.method + ' ' + req.url);
+	res.end('Hello from device!\n' + req.method + ' ' + req.url);
 });
 
 app.listen(PORT, function () {
