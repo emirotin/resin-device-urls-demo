@@ -1,7 +1,7 @@
 var express = require('express');
 var compression = require('compression');
 
-var PORT = 80;
+var PORT = 8080;
 
 var app = express();
 
