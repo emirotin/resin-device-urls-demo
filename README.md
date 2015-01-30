@@ -1,8 +1,8 @@
-# Resin.io -- Dummy app
+# Resin.io -- Device URLs demo app
 
 ## How it works
 
-Runs forever, suitable for keeping the app container running.
+Runs Express 4.x web server that responds to any HTTP request.
 
 ## How to use
 
@@ -22,3 +22,5 @@ You should be able to `git push resin master` to your devices!
 **Note**: If you used an already existing application that you've previously pushed other code
 to you will have to do `git push --force resin master` the first time to delete the previous
 commits.
+
+Then go to your Device page in resin.io dashboard, open the Actions tab and enable Device URLs. Click the URL shown. Done.
