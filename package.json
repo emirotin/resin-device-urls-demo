@@ -8,7 +8,8 @@
   "version": "0.0.1",
   "dependencies": {
     "compression": "^1.2.1",
-    "express": "^4.10.4"
+    "express": "^4.10.4",
+    "morgan": "^1.5.1"
   },
   "engines": {
     "node": "0.10.22"

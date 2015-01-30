@@ -1,5 +1,7 @@
 var express = require('express');
 var compression = require('compression');
+var morgan = require('morgan');
+
 
 var PORT = 8080;
 
@@ -9,6 +11,7 @@ if (process.env.NODE_ENV == 'production') {
 	app.enable('trust proxy');
 }
 app.use(compression());
+app.use(morgan('dev'));
 app.all('*', function (req, res) {
 	res.end('Hello from device!\n' + req.method + ' ' + req.url);
 });
